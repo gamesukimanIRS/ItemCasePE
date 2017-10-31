@@ -10,6 +10,8 @@
 
 # ItemCasePE
 
+日本語化（？）
+
 - Summary: An implementation of Bukkit's ItemCase
 - PocketMine-MP API version: 2.0.0
 - DependencyPlugins: libcommon
