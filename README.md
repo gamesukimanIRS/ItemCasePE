@@ -12,6 +12,9 @@
 
 日本語化（？）
 
+- pocketmine\network\mcpe\protcolがmaster
+- pocketmine\network\protocolがmaster_2
+
 - Summary: An implementation of Bukkit's ItemCase
 - PocketMine-MP API version: 3.0.0-ALPHA9
 - DependencyPlugins: libcommon
