@@ -58,7 +58,7 @@ class Main extends PluginBase implements CommandExecutor,Listener {
     $this->classic = $cf["settings"]["classic"];
     if (!$this->classic) $this->getLogger()->info(TextFormat::YELLOW.mc::_("ItemCasePE in NEW WAVE mode"));
   }
-  public function onCommand(CommandSender $sender, Command $cmd, $label, array $args) {
+  public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool{
     if ($cmd->getName() != "itemcase") return FALSE;
     if (!count($args)) return $this->cmdAdd($sender);
     $scmd = strtolower(array_shift($args));
