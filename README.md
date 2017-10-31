@@ -13,7 +13,7 @@
 日本語化（？）
 
 - Summary: An implementation of Bukkit's ItemCase
-- PocketMine-MP API version: 2.0.0
+- PocketMine-MP API version: 3.0.0-ALPHA9
 - DependencyPlugins: libcommon
 - OptionalPlugins: 
 - Categories: N/A
