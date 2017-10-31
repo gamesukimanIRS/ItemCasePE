@@ -115,11 +115,11 @@ class mc {
     $cnt = 0;
     if (file_exists($plugin->getDataFolder()."messages.ini")) {
       $cnt = self::load($this->txt, $plugin->getDataFolder()."messages.ini");
-      $nagme = isset($this->txt[CANARY]);
+      $nagme = isset($this->txt);
       if (!$nagme) return $cnt;
       $plugin->getLogger()->error("Selected language \"".$lang."\" NOT available");
-      $loaded = $this->txt[CANARY];
-      unset($this->txt[CANARY]);
+      $loaded = $this->txt;
+      unset($this->txt);
       if ($lang != $loaded) {
         $plugin->getLogger()->error("Language has been changed since");
         $plugin->getLogger()->error("\"messages.ini\" was created.");
@@ -135,7 +135,7 @@ class mc {
       if ($fp === NULL) return 0;
       if (!is_dir($plugin->getDataFolder())) mkdir($plugin->getDataFolder());
       file_put_contents($plugin->getDataFolder()."messages.ini",
-				'"'.CANARY."\"=\"".$lang."\"\n".
+				'"'."\"=\"".$lang."\"\n".
 				stream_get_contents($fp));
       $plugin->getLogger()->error("Creating empty \"messages.ini\"");
       $plugin->getLogger()->error("You may need to delete this file");

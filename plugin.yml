@@ -18,8 +18,8 @@ name: ItemCasePE
 description: An implementation of Bukkit's ItemCase
 version: 1.1.0
 author: aliuly
-authors: gamesukimanIRS
-website: [http://github.com/Muirfield/ItemCasePE, https://github.com/gamesukimanIRS/ItemCasePE]
+authors: [gamesukimanIRS]
+website: https://github.com/gamesukimanIRS/ItemCasePE
 
 commands:
   itemcase:
@@ -29,13 +29,6 @@ commands:
     permission: itemcase.cmd
 
 permissions:
- itemcase:
-  default: false
-  description: "allow players access to all itemcase features"
-  children:
-   itemcase.cmd:
+  itemcase.cmd:
     default: op
     description: "allow players access to the itemcase command"
-   itemcase.destroy:
-    default: op
-    description: "allow players to destroy cases"
